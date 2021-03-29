@@ -1,58 +1,75 @@
-import logo from './logo.svg';
+import Form from './Components/Form';
+import DisplayColor from './Components/DisplayColor';
 import './App.css';
+import React, {useState} from 'react';
+
+
 
 function App() {
+  // const [colorList,setColorList] = useState([]);
+
+  const [blue, setBlue] = useState(false);
+  const [red, setRed] = useState(false);
+  const [yellow, setYellow] = useState(false);
+  const [orange, setOrange] = useState(false);
+  const [green, setGreen] = useState(false);
+  const [purple, setPurple] = useState(false);
+  const [black, setBlack] = useState(false);
+
+
+
+
+  /*
+
+
+  const colorBank = []
+
+  1. Take color and add it to array colorBank
+  2. setColor
+
+  onSubmit.colorBank.push("color")
+
+  colorBank.map()
+
+
+
+  */
+
+  
+
+
+
+  
   return (
     <div>
+      <Form 
+      blue={blue}
+      setBlue={setBlue}
+      red={red}
+      setRed={setRed}
+      yellow={yellow}
+      setYellow={setYellow}
+      orange={orange}
+      setOrange={setOrange}
+      green={green}
+      setGreen={setGreen}
+      purple={purple}
+      setPurple={setPurple}
+      black={black}
+      setBlack={setBlack}
+      />
+
+      <DisplayColor
+      blue={blue}
+      red={red}
+      yellow={yellow}
+      orange={orange}
+      green={green}
+      purple={purple}
+      black={black}
+      /> 
     </div>
   );
 }
 
 export default App;
-
-
-{/*
-
-  Create a component 
-  
-  1) with a form  
-  2) that accepts a color. 
-  3) when submitted add a box,
-  to the set of boxes with the appropriate color.
-  4) The boxes should appear next to one another and wrap if neaded
-
-
-  ~Planning
-
-  1. Form.js
-      a) will take input
-      - e.target.value
-      - conditional rendering? i.e tell use choose one of 7 colors
-
-      b) submit button
-      - Upon submit, sends up the argument (onSubmission) to App.JS
-
-
-  2. ColorDisplay.js
-      - Has all of the color blocks
-      - using props
-
-  3. App.js
-      a) takes form and color
-      b) const [Color, Color] = useState("");
-      c) colorHandler = (onSubmission) => {
-        setSubmitColor(onSubmission) }
-
-      Return?
-      d) <Form onSubmission={colorHandler} />
-      e) <ColorDisplay colorForBox={Color}
-
-    4. CSS
-
-
-
-WHERE DOES THIS? APP? const [list of colors : Red, Yellow, Blue, Orange, Green, Violet, Black]
-
-
-
-*/}
