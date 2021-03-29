@@ -75,6 +75,3 @@ const submitHandler = (e) =>{
 };
 export default Form;
 
-
-
-

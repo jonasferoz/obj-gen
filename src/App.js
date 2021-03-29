@@ -6,7 +6,6 @@ import React, {useState} from 'react';
 
 
 function App() {
-  // const [colorList,setColorList] = useState([]);
 
   const [blue, setBlue] = useState(false);
   const [red, setRed] = useState(false);
@@ -16,26 +15,6 @@ function App() {
   const [purple, setPurple] = useState(false);
   const [black, setBlack] = useState(false);
 
-
-
-
-  /*
-
-
-  const colorBank = []
-
-  1. Take color and add it to array colorBank
-  2. setColor
-
-  onSubmit.colorBank.push("color")
-
-  colorBank.map()
-
-
-
-  */
-
-  
 
 
 

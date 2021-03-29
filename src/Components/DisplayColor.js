@@ -72,10 +72,3 @@ const DisplayColor = (props) => {
     );
 };
 export default DisplayColor;
-
-/*
-list of colors : Red, Yellow, Blue, Orange, Green, Violet, Black]
-
-
-
-*/
